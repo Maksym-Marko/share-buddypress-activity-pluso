@@ -3,6 +3,9 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+// require database-talk class
+require_once MXSBAP_PLUGIN_ABS_PATH . 'includes\admin\class-database-talk.php';
+
 class MXSBAPAdminMain
 {
 
@@ -45,13 +48,14 @@ class MXSBAPAdminMain
 		// register admin menu
 		public function add_admin_pages()
 		{
-
-			add_menu_page( 'Configure Plugin', 'Share Pluso', 'manage_options', 'mxsbap_share', array( $this, 'admin_index' ), '', 111 );
+	
+			// add submenu
+			add_submenu_page( 'options-general.php', 'Configure Plugin', 'Share Pluso', 'manage_options', 'mxsbap_share_pluso', array( $this, 'index_page' ) );
 
 		}
 
 			// load template
-			public function admin_index()
+			public function index_page()
 			{
 
 				// require index page
@@ -63,7 +67,7 @@ class MXSBAPAdminMain
 		public function settings_link( $links )
 		{
 
-			$settings_link = '<a href="admin.php?page=mxsbap_share">Settings</a>'; // options-general.php
+			$settings_link = '<a href="admin.php?page=mxsbap_share_pluso">Settings</a>'; // options-general.php
 
 			array_push( $links, $settings_link );
 
