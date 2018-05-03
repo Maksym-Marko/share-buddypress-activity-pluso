@@ -24,7 +24,7 @@ class MXSBAPBasisPluginClass
 		  }})();&lt;/script&gt;';
 
 		// Default block for icons
-		$block_icons = '&lt;div class=&quot;pluso&quot; data-background=&quot;transparent&quot; data-options=&quot;medium,square,line,horizontal,nocounter,theme=04&quot; data-services=&quot;vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print&quot;&gt;&lt;/div&gt;';
+		$block_icons = '&lt;div class=&quot;pluso&quot; data-background=&quot;transparent&quot; data-options=&quot;medium,round,line,horizontal,nocounter,theme=04&quot; data-services=&quot;vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print&quot; data-url=&quot;%PAGE-URL%&quot; data-title=&quot;%TITLE%&quot; data-description=&quot;%DESCRIPTION%&quot;&gt;&lt;/div&gt;';
 
 		// Create table
 		global $wpdb;

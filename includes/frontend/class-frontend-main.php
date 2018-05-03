@@ -6,7 +6,20 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 class MXSBAPFrontEndMain
 {
 
-	// Register function
+	public function __construct()
+	{
+
+		// hook for JS
+		add_action( 'wp_footer', array( $this, 'mxsbap_add_pluso_script' ), 100 );
+
+		// hook for extra "pluso" button
+		add_action( 'bp_activity_entry_content', array( $this, 'mxsbap_add_share_button' ), 10 );
+
+	}
+
+	/*
+	* Registration of styles and scripts
+	*/
 	public function register()
 	{
 
@@ -25,6 +38,23 @@ class MXSBAPFrontEndMain
 			wp_enqueue_script( 'mxsbap_script', MXSBAP_PLUGIN_URL . 'includes/frontend/assets/js/script.js', array( 'jquery' ), MXSBAP_PLUGIN_VERSION, false );
 
 		}
+
+	// Print JS script
+	public function mxsbap_add_pluso_script()
+	{
+
+		print mxsbap_decode_line_code( mxsbap_select_script() );
+
+	}
+
+	// 
+	public function mxsbap_add_share_button()
+	{
+
+		print mxsbap_decode_line_code( mxsbap_select_block_icons() );
+
+	}
+
 
 }
 

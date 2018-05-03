@@ -94,7 +94,7 @@ class MXSBAPDataBaseTalk
 			    h.appendChild(s);
 			  }})();&lt;/script&gt;';
 
-			$restore_string_block = '&lt;div class=&quot;pluso&quot; data-background=&quot;transparent&quot; data-options=&quot;medium,square,line,horizontal,nocounter,theme=04&quot; data-services=&quot;vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print&quot;&gt;&lt;/div&gt;';
+			$restore_string_block = '&lt;div class=&quot;pluso&quot; data-background=&quot;transparent&quot; data-options=&quot;medium,round,line,horizontal,nocounter,theme=04&quot; data-services=&quot;vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print&quot; data-url=&quot;%PAGE-URL%&quot; data-title=&quot;%TITLE%&quot; data-description=&quot;%DESCRIPTION%&quot;&gt;&lt;/div&gt;';
 
 			global $wpdb;
 

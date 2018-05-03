@@ -11,19 +11,33 @@ jQuery( document ).ready( function( $ ){
 
 		var start_restore = is_checked_restore === true ? 'restore' : '0';
 
+		var current_url = $( '#mxsbap_current_url' ).val();
+
 		var data = {
 
 			'action': 'mxsbap_update',
 			'nonce': nonce,
 			'script_string': script_string,
 			'block_string': block_string,
-			'is_checked_restore': start_restore
+			'is_checked_restore': start_restore,
+			'current_url': current_url
 
 		};
 
 		jQuery.post( ajaxurl, data, function( response ){
 
-			console.log( response )
+
+			if( data.is_checked_restore === 'restore' ){
+
+				setTimeout( function(){
+
+					window.location.href = data.current_url;
+
+				}, 100 );
+				
+			}
+
+			alert( 'Changes saved' );
 
 		} );		
 

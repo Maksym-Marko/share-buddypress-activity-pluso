@@ -13,19 +13,23 @@
 	width: 100%;
 	height: 100px;
 }
-.mx-submit_button_wrap{
+.mx-submit_button_wrap {
 	text-align: right;
 }
-.mx-restore_data{
+.mx-restore_data {
     float: left;
     width: 464px;
 }
-.mx-restore_data label{
+.mx-restore_data label {
     float: left;
 }
-.wp-core-ui .mx-restore_data input{
+.wp-core-ui .mx-restore_data input {
     float: left;
     margin-top: 2px;
     margin-left: 8px;
     height: 16px;
+}
+.mx-hint_text{
+    background: #f3f3f3;
+    padding: 6px;
 }
