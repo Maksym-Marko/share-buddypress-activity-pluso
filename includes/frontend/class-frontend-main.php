@@ -13,7 +13,7 @@ class MXSBAPFrontEndMain
 		add_action( 'wp_footer', array( $this, 'mxsbap_add_pluso_script' ), 100 );
 
 		// hook for extra "pluso" button
-		add_action( 'bp_activity_entry_content', array( $this, 'mxsbap_add_share_button' ), 10 );
+		add_action( 'bp_activity_entry_content', array( $this, 'mxsbap_add_share_button' ), 100 );
 
 	}
 
@@ -39,7 +39,9 @@ class MXSBAPFrontEndMain
 
 		}
 
-	// Print JS script
+	/*
+	* Print JS script
+	*/
 	public function mxsbap_add_pluso_script()
 	{
 
@@ -47,7 +49,9 @@ class MXSBAPFrontEndMain
 
 	}
 
-	// 
+	/*
+	* Print Pluso buttons
+	*/ 
 	public function mxsbap_add_share_button()
 	{
 

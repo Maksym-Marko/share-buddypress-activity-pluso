@@ -45,5 +45,57 @@ $current_url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP
 		</p>
 	</div>
 
-</form>
+	<div class="mx-block_wrap">
 
+		<h3>Change layout and appearance of the buttons</h3>
+
+		<p>
+			To change the appearance of the buttons, visit the site <a href="http://share.pluso.ru/" target="_blank">share.pluso.ru</a>.
+		</p>
+
+		<p>
+			Next you need to select those buttons that interest you.
+			<br>
+			<a target="_blank" href="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img1.jpg'; ?>" class="thickbox" rel="504c2221babf12b054c989559594eaec">
+				<img src="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img1.jpg'; ?>">
+			</a>
+		</p>
+
+		<p>
+			The next step is to copy the Pluso code.
+			<br>
+			<a target="_blank" href="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img2.jpg'; ?>" class="thickbox" rel="504c2221babf12b054c989559594eaec2">
+				<img src="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img2.jpg'; ?>">
+			</a>
+			<a target="_blank" href="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img3.jpg'; ?>" class="thickbox" rel="504c2221babf12b054c989559594eaec2">
+				<img src="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img3.jpg'; ?>">
+			</a>
+		</p>
+
+		<p>
+			And paste into special places on your site.
+			<br>
+			<a target="_blank" href="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img4.jpg'; ?>" class="thickbox" rel="504c2221babf12b054c989559594eaec3">
+				<img src="<?php echo MXSBAP_PLUGIN_URL . 'includes/admin/assets/img/img4.jpg'; ?>">
+			</a>
+		</p>
+
+		<p>
+			Then click "Save".
+		</p>
+
+		<p>
+			Pay attention to the following constants: <b>%PAGE-URL%</b>, <b>%TITLE%</b>, <b>%DESCRIPTION%</b>. <br />
+			For proper operation these constants should be located in special places.
+
+			<ul class="mx-hint_text">
+				<li>data-url="<b>%PAGE-URL%</b>"</li>
+				<li>data-title="<b>%TITLE%</b>"</li>
+				<li>data-description="<b>%DESCRIPTION%</b>"</li>
+			</ul>
+			
+		</p>
+
+	</div>
+
+</form>

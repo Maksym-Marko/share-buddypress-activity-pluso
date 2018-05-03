@@ -57,14 +57,11 @@ class MXSBAPBasisPluginClass
 			);
 		}
 
-		// Rewrite rules
-		flush_rewrite_rules();
-
 	}
 
 	public static function deactivate()
 	{
-
+		// ...
 	}
 
 }

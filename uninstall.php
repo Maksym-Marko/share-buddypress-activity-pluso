@@ -3,7 +3,9 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-// uninstall
+/*
+* Uninstall
+*/
 if ( __FILE__ != WP_UNINSTALL_PLUGIN ) return;
            
 global $wpdb;
@@ -21,5 +23,3 @@ foreach( $table_names as $table_name ){
     $wpdb->query($sql);
 
 }
-
-//delete_option( 'some_option' );

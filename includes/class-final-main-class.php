@@ -36,7 +36,7 @@ final class MXSBAPMainClass
 	}
 
 	/*
-	* Incude required core files
+	* Include required core files
 	*/
 	public function include()
 	{
@@ -67,6 +67,5 @@ final class MXSBAPMainClass
 		}
 
 	}
-
 
 }

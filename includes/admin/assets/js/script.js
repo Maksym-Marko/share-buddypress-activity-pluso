@@ -37,7 +37,7 @@ jQuery( document ).ready( function( $ ){
 				
 			}
 
-			alert( 'Changes saved' );
+			alert( 'Changes saved!' );
 
 		} );		
 

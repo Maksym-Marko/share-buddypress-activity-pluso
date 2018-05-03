@@ -29,7 +29,10 @@
     margin-left: 8px;
     height: 16px;
 }
-.mx-hint_text{
+.mx-hint_text {
     background: #f3f3f3;
     padding: 6px;
+}
+.mx-block_wrap .thickbox img {
+    width: 200px;
 }

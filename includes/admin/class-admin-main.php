@@ -3,9 +3,6 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-// require database-talk class
-require_once MXSBAP_PLUGIN_ABS_PATH . 'includes\admin\class-database-talk.php';
-
 class MXSBAPAdminMain
 {
 
@@ -16,9 +13,24 @@ class MXSBAPAdminMain
 
 		$this->plugin_name = MXSBAP_PLUGN_BASE_NAME;
 
+		$this->include();
+
 	}
 
-	// Register function
+	/*
+	* Include the necessary basic files for the admin panel
+	*/
+	public function include()
+	{
+
+		// require database-talk class
+		require_once MXSBAP_PLUGIN_ABS_PATH . 'includes\admin\class-database-talk.php';
+
+	}
+
+	/*
+	* Registration of styles and scripts
+	*/
 	public function register()
 	{
 
@@ -39,9 +51,9 @@ class MXSBAPAdminMain
 
 			wp_enqueue_style( 'mxsbap_font_awesome', MXSBAP_PLUGIN_URL . 'assets/font-awesome-4.6.3/css/font-awesome.min.css' );
 
-			wp_enqueue_style( 'mxsbap_admin_style', MXSBAP_PLUGIN_URL . 'includes/admin/assets/css/style.css', array( 'mxsbap_font_awesome' ), MXSBAP_PLUGIN_VERSION, 'all' );
+			wp_enqueue_style( 'mxsbap_admin_style', MXSBAP_PLUGIN_URL . 'includes/admin/assets/css/style.css', array( 'mxsbap_font_awesome', 'thickbox' ), MXSBAP_PLUGIN_VERSION, 'all' );
 
-			wp_enqueue_script( 'mxsbap_admin_script', MXSBAP_PLUGIN_URL . 'includes/admin/assets/js/script.js', array( 'jquery' ), MXSBAP_PLUGIN_VERSION, false );
+			wp_enqueue_script( 'mxsbap_admin_script', MXSBAP_PLUGIN_URL . 'includes/admin/assets/js/script.js', array( 'jquery', 'thickbox' ), MXSBAP_PLUGIN_VERSION, false );
 
 		}
 
@@ -67,7 +79,7 @@ class MXSBAPAdminMain
 		public function settings_link( $links )
 		{
 
-			$settings_link = '<a href="admin.php?page=mxsbap_share_pluso">Settings</a>'; // options-general.php
+			$settings_link = '<a href="admin.php?page=mxsbap_share_pluso">Settings</a>';
 
 			array_push( $links, $settings_link );
 
