@@ -4,7 +4,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 /*
-* Uninstall
+* Uninstall Plugin
 */
 if ( __FILE__ != WP_UNINSTALL_PLUGIN ) return;
            

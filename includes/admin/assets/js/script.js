@@ -8,9 +8,7 @@ jQuery( document ).ready( function( $ ){
 		var script_string = $( '#mxsbap_script_body' ).val();
 		var block_string = $( '#mxsbap_block_body' ).val();
 		var is_checked_restore = $( '#mxsbap_restore_data' ).prop( 'checked' );
-
 		var start_restore = is_checked_restore === true ? 'restore' : '0';
-
 		var current_url = $( '#mxsbap_current_url' ).val();
 
 		var data = {

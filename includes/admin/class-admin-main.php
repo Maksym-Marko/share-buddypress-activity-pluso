@@ -6,8 +6,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 class MXSBAPAdminMain
 {
 
+	// A unique string for creating a menu bar
 	public $plugin_name;
 
+	/*
+	* MXSBAPAdminMain constructor
+	*/
 	public function __construct()
 	{
 

@@ -30,7 +30,7 @@ final class MXSBAPMainClass
 		$this->define( 'MXSBAP_PLUGIN_ABS_PATH', dirname( MXSBAP_PLUGIN_PATH ) . '\\' );
 
 		// version
-		$this->define( 'MXSBAP_PLUGIN_VERSION', time() ); // Must be replaced before production on for example 1.0
+		$this->define( 'MXSBAP_PLUGIN_VERSION', '1.0' ); // Must be replaced before production on for example '1.0'
 
 
 	}

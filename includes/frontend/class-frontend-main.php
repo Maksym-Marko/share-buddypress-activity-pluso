@@ -6,6 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 class MXSBAPFrontEndMain
 {
 
+	/*
+	* MXSBAPFrontEndMain constructor
+	*/
 	public function __construct()
 	{
 
@@ -28,6 +31,7 @@ class MXSBAPFrontEndMain
 
 	}
 
+		// enqueue
 		public function enqueue()
 		{
 

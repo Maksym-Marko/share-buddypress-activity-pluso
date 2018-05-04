@@ -6,6 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 class MXSBAPDataBaseTalk
 {
 
+	/*
+	* MXSBAPDataBaseTalk constructor
+	*/
 	public function __construct()
 	{
 
